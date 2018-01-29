@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cef66da0-8335-45fb-938d-055ca2f1d147" name="Default" comment="" />
+    <list default="true" id="cef66da0-8335-45fb-938d-055ca2f1d147" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NormalGraduateWork/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.NormalGraduateWork/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Feal4Analyzer.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Feal4Analyzer.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/FEAL-4/Feal4Analyzer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1048">
-              <caret line="280" column="54" lean-forward="false" selection-start-line="280" selection-start-column="53" selection-end-line="280" selection-end-column="54" />
+            <state relative-caret-position="370">
+              <caret line="155" column="35" lean-forward="true" selection-start-line="155" selection-start-column="35" selection-end-line="155" selection-end-column="35" />
               <folding>
                 <marker date="1517234784456" expanded="false" signature="6:227" ph="..." />
                 <marker date="1517234784456" expanded="true" signature="229:485" ph="/* ReSharper disable SuggestVarOrType_BuiltInTypes ... */" />
@@ -66,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Feal4Encryptor.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Feal4Encryptor.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/FEAL-4/Feal4Encryptor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1281">
-              <caret line="61" column="39" lean-forward="true" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+            <state relative-caret-position="399">
+              <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
               <folding>
                 <marker date="1517228451348" expanded="true" signature="15:165" ph="/* ReSharper disable BuiltInTypeReferenceStyle ... */" />
                 <marker date="1517228451348" expanded="true" signature="208:2427" ph="{...}" />
@@ -98,6 +100,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/FEAL-4/Feal4SubKeysGenerator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -176,6 +181,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <flattenPackages />
@@ -278,12 +284,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517227954293</updated>
-      <workItem from="1517227955640" duration="7223000" />
+      <workItem from="1517227955640" duration="8148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7223000" />
+    <option name="totallyTimeSpent" value="8148000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -303,7 +309,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16822916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -782,10 +788,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/FEAL-4/Feal4Encryptor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <marker date="1517228451348" expanded="true" signature="15:165" ph="/* ReSharper disable BuiltInTypeReferenceStyle ... */" />
+            <marker date="1517228451348" expanded="true" signature="208:2427" ph="{...}" />
+            <marker date="1517228451348" expanded="true" signature="242:2425" ph="{...}" />
+            <marker date="1517228451348" expanded="true" signature="315:1234" ph="{...}" />
+            <marker date="1517228451348" expanded="true" signature="1309:2188" ph="{...}" />
+            <marker date="1517228451348" expanded="true" signature="2252:2419" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/FEAL-4/Feal4Analyzer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1048">
-          <caret line="280" column="54" lean-forward="false" selection-start-line="280" selection-start-column="53" selection-end-line="280" selection-end-column="54" />
+        <state relative-caret-position="370">
+          <caret line="155" column="35" lean-forward="true" selection-start-line="155" selection-start-column="35" selection-end-line="155" selection-end-column="35" />
           <folding>
             <marker date="1517234784456" expanded="false" signature="6:227" ph="..." />
             <marker date="1517234784456" expanded="true" signature="229:485" ph="/* ReSharper disable SuggestVarOrType_BuiltInTypes ... */" />
@@ -811,21 +832,6 @@
             <marker date="1517234784456" expanded="true" signature="11929:13286" ph="{...}" />
             <marker date="1517234784456" expanded="true" signature="12043:12556" ph="{...}" />
             <marker date="1517234784456" expanded="true" signature="12609:13249" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/FEAL-4/Feal4Encryptor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1281">
-          <caret line="61" column="39" lean-forward="true" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
-          <folding>
-            <marker date="1517228451348" expanded="true" signature="15:165" ph="/* ReSharper disable BuiltInTypeReferenceStyle ... */" />
-            <marker date="1517228451348" expanded="true" signature="208:2427" ph="{...}" />
-            <marker date="1517228451348" expanded="true" signature="242:2425" ph="{...}" />
-            <marker date="1517228451348" expanded="true" signature="315:1234" ph="{...}" />
-            <marker date="1517228451348" expanded="true" signature="1309:2188" ph="{...}" />
-            <marker date="1517228451348" expanded="true" signature="2252:2419" ph="{...}" />
           </folding>
         </state>
       </provider>
