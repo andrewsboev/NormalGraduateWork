@@ -1,0 +1,14 @@
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\bin\Debug\NormalGraduateWork.Tests.dll
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\bin\Debug\NormalGraduateWork.Tests.pdb
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\bin\Debug\NormalGraduateWork.exe
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\bin\Debug\nunit.framework.dll
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\bin\Debug\NormalGraduateWork.pdb
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\bin\Debug\nunit.framework.xml
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\obj\Debug\NormalGraduateWork.Tests.csprojResolveAssemblyReference.cache
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\obj\Debug\NormalGraduateWork.Tests.csproj.CoreCompileInputs.cache
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\obj\Debug\NormalGraduateWork.Tests.dll
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\obj\Debug\NormalGraduateWork.Tests.pdb
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\bin\Debug\FluentAssertions.dll
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\bin\Debug\FluentAssertions.pdb
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork.Tests\bin\Debug\FluentAssertions.xml
