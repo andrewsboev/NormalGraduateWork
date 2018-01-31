@@ -16,6 +16,12 @@
             <e p="GaloisField16.cs" t="Include" />
           </e>
           <e p="Analysis" t="Include">
+            <e p="AES-16" t="Include">
+              <e p="Aes16Analyzer.cs" t="Include" />
+            </e>
+            <e p="FEAL-4" t="Include">
+              <e p="Feal4Analyzer.cs" t="Include" />
+            </e>
             <e p="SimpleCipher" t="Include">
               <e p="DifferentialCharacteristics.cs" t="Include" />
               <e p="PlainCipherPair.cs" t="Include" />
@@ -23,7 +29,6 @@
             </e>
           </e>
           <e p="FEAL-4" t="Include">
-            <e p="Feal4Analyzer.cs" t="Include" />
             <e p="Feal4Encryptor.cs" t="Include" />
             <e p="Feal4Helper.cs" t="Include" />
             <e p="Feal4SubKeysGenerator.cs" t="Include" />
@@ -34,6 +39,9 @@
         </e>
         <e p="Extensions" t="Include">
           <e p="StringExtensions.cs" t="Include" />
+        </e>
+        <e p="IntellectualSystem" t="Include">
+          <e p="Intellect.cs" t="Include" />
         </e>
         <e p="NormalGraduateWork.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
@@ -55,6 +63,7 @@
       </e>
       <e p="NormalGraduateWork.sln" t="IncludeFlat" />
       <e p="NormalGraduateWork.Tests" t="IncludeRecursive">
+        <e p="Aes16WrapperTests..cs" t="Include" />
         <e p="ArgumentsPositionsGeneratorTests.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Feal4HelperTests.cs" t="Include" />

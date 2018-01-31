@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Security.Cryptography;
-using System.Threading;
 using NormalGraduateWork.Cryptography.Analysis.SimpleCipher;
 using NormalGraduateWork.Random;
 
@@ -13,7 +11,7 @@ using NormalGraduateWork.Random;
 // ReSharper disable ParameterTypeCanBeEnumerable.Local
 // ReSharper disable BuiltInTypeReferenceStyle
 
-namespace NormalGraduateWork.Cryptography
+namespace NormalGraduateWork.Cryptography.Analysis
 {
     using PlainCipherPair64 = PlainCipherPair<UInt64>;
     using ListOfDiffPairs = List<Tuple<PlainCipherPair<UInt64>, PlainCipherPair<UInt64>>>;
@@ -37,9 +35,17 @@ namespace NormalGraduateWork.Cryptography
             this.feal4SubKeysGenerator = feal4SubKeysGenerator;
             this.feal4Encryptor = feal4Encryptor;
             randomNumberGenerator = new WrappedRandomNumberGenerator(
-                new RNGCryptoServiceProvider());
+                new UsualRandom());
             subKeys = this.feal4SubKeysGenerator.Generate();
-            subKeys = new UInt32[] {3016387496, 478038835, 4216481020, 210561241, 2865391883, 1053470615};
+            var random = new System.Random();
+            for (var i = 0; i < 6; ++i)
+            {
+                var a = random.Next() % 65536;
+                var b = random.Next() % 65536;
+                var c = (UInt32)((a << 16) | b);
+                subKeys[i] = c;
+            }
+            subKeys = new UInt32[] {1930131332, 1185492286, 6433147, 1628770889, 1687499305, 1500732211};
         }
 
         public UInt32[] Analyze()
@@ -50,11 +56,12 @@ namespace NormalGraduateWork.Cryptography
             var fourthRoundStopWatch = Stopwatch.StartNew();
             var fourthRoundChosenPlaintexts = GetChosenPlaintexts(inputDiff1);
             var fourthRoundUndoneFinalOperation = UndoFinalOperation(fourthRoundChosenPlaintexts);
-            for (var i = 0; i < fourthRoundUndoneFinalOperation.Count; ++i)
-                Console.WriteLine(fourthRoundUndoneFinalOperation[i].Item1.Cipher);
+            //for (var i = 0; i < fourthRoundUndoneFinalOperation.Count; ++i)
+            //    Console.WriteLine(fourthRoundUndoneFinalOperation[i].Item1.Cipher);
             var fourthRoundSubKey = CrackLastRound(outputDiff, fourthRoundUndoneFinalOperation);
             Console.WriteLine($"4-th round cracking time: {fourthRoundStopWatch.Elapsed}");
             Console.WriteLine($"4-th round subkey: {fourthRoundSubKey}");
+            
             
             Console.WriteLine("CRACKING ROUND 3");
             var thirdRoundStopWatch = Stopwatch.StartNew();
@@ -148,12 +155,13 @@ namespace NormalGraduateWork.Cryptography
         private UInt32 CrackLastRound(UInt32 outDiff, ListOfDiffPairs chosenPlaintexts)
         {
             Console.WriteLine("CRACK LAST ROUND");
-            for (UInt64 fakeK = 0; fakeK < (UInt64)UInt32.MaxValue; ++fakeK)
+            for (UInt32 fakeK = 0; ; ++fakeK)
             {
-                var fakeK32 = (UInt32) fakeK;
-                var score = GetScore(outDiff, chosenPlaintexts, fakeK32);
+                var score = GetScore(outDiff, chosenPlaintexts, fakeK);
                 if (score == numberOfPlain)
-                    return fakeK32;
+                    return fakeK;
+                if (fakeK == UInt32.MaxValue)
+                    break;
             }
             throw new ArgumentException();
         }
@@ -215,8 +223,8 @@ namespace NormalGraduateWork.Cryptography
                 firstCipherLeft = firstCipherRight;
                 secondCipherLeft = secondCipherRight;
 
-                firstCipherRight = Feal4Helper.Fbox(firstCipherLeft ^ subKey) ^ (Feal4Helper.GetRightHalf(diffPairs[i].Item1.Cipher));
-                secondCipherRight = Feal4Helper.Fbox(secondCipherLeft ^ subKey) ^ (Feal4Helper.GetRightHalf(diffPairs[i].Item2.Cipher));
+                firstCipherRight = Feal4Helper.Fbox(firstCipherLeft ^ subKey) ^ (Feal4Helper.GetLeftHalf(diffPairs[i].Item1.Cipher));
+                secondCipherRight = Feal4Helper.Fbox(secondCipherLeft ^ subKey) ^ (Feal4Helper.GetLeftHalf(diffPairs[i].Item2.Cipher));
 
                 var firstObj = new PlainCipherPair<UInt64>(diffPairs[i].Item1.Plain,
                     Feal4Helper.Combine32BitHalfs(firstCipherLeft, firstCipherRight));
@@ -254,24 +262,24 @@ namespace NormalGraduateWork.Cryptography
         private ListOfDiffPairs GetChosenPlaintexts(UInt64 diff)
         {
             var result = new ListOfDiffPairs();
-            var firstPlains = new UInt64[]
+            var plains = new UInt64[]
             {
-                12955285647861369651    ,
-                18109648085315283161    ,
-                12306764428762328983    ,
-                17211297972828623338    ,
-                15427241088469002237    ,
-                17621018528392063319    ,
-                5723879385805672826    ,
-                6238609054337075805    ,
-                7604817027291702491    ,
-                2434021997319343249    ,
-                14638823592962865666    ,
-                6688019176124855016    
+                8293413307042899260,
+                2417420169597379724,
+                7391341682234711011,
+                1294612218368839102,
+                3427586664725945798,
+                8120399254031000395,
+                4954062227563315182,
+                7287792347285229213,
+                6369026791565508293,
+                3497943451105456066,
+                635651540614717595,
+                466693664381143020
             };
             for (var i = 0; i < numberOfPlain; ++i)
             {
-                var firstPlain = firstPlains[i];/*randomNumberGenerator.GetNextUInt64();*/
+                var firstPlain = randomNumberGenerator.GetNextUInt64();
                 var secondPlain = firstPlain ^ diff;
                 var firstCipher = feal4Encryptor.Encrypt(firstPlain, subKeys);
                 var secondCipher = feal4Encryptor.Encrypt(secondPlain, subKeys);
@@ -279,7 +287,6 @@ namespace NormalGraduateWork.Cryptography
                 var first = new PlainCipherPair64(firstPlain, firstCipher);
                 var second = new PlainCipherPair64(secondPlain, secondCipher);
                 result.Add(Tuple.Create(first, second));
-                Console.WriteLine($"{firstPlain} {secondPlain} {firstCipher} {secondCipher}");
             }
             return result;
         }

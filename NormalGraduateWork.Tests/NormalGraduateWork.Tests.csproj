@@ -49,6 +49,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aes16WrapperTests..cs" />
     <Compile Include="ArgumentsPositionsGeneratorTests.cs" />
     <Compile Include="Feal4HelperTests.cs" />
     <Compile Include="TemplateGeneratorTests.cs" />

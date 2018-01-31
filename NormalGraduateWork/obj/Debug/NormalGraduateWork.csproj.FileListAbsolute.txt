@@ -1,6 +1,6 @@
-C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork\obj\Debug\NormalGraduateWork.csprojResolveAssemblyReference.cache
-C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork\obj\Debug\NormalGraduateWork.csproj.CoreCompileInputs.cache
 C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork\bin\Debug\NormalGraduateWork.exe
 C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork\bin\Debug\NormalGraduateWork.pdb
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork\obj\Debug\NormalGraduateWork.csprojResolveAssemblyReference.cache
+C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork\obj\Debug\NormalGraduateWork.csproj.CoreCompileInputs.cache
 C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork\obj\Debug\NormalGraduateWork.exe
 C:\Users\sboev\RiderProjects\NormalGraduateWork\NormalGraduateWork\obj\Debug\NormalGraduateWork.pdb

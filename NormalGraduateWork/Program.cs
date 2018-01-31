@@ -1,4 +1,5 @@
 ﻿using NormalGraduateWork.Cryptography;
+using NormalGraduateWork.Cryptography.Analysis;
 
 namespace NormalGraduateWork
 {
@@ -6,10 +7,7 @@ namespace NormalGraduateWork
     {
         static void Main(string[] args)
         {
-            var subKeys = new Feal4SubKeysGenerator();
-            var feal4Encryptor = new Feal4Encryptor();
-            var feal4Analyzer = new Feal4Analyzer(subKeys, feal4Encryptor);
-            var result = feal4Analyzer.Analyze();
+            new Aes16Analyzer().Analyze();
         }
     }
 }

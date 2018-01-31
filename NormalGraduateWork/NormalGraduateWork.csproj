@@ -16,7 +16,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -46,15 +46,17 @@
     <Compile Include="Cryptography\Aes16\Aes16SubKeysGenerator.cs" />
     <Compile Include="Cryptography\Aes16\Aes16Wrapper.cs" />
     <Compile Include="Cryptography\Aes16\GaloisField16.cs" />
+    <Compile Include="Cryptography\Analysis\AES-16\Aes16Analyzer.cs" />
+    <Compile Include="Cryptography\Analysis\FEAL-4\Feal4Analyzer.cs" />
     <Compile Include="Cryptography\Analysis\SimpleCipher\DifferentialCharacteristics.cs" />
     <Compile Include="Cryptography\Analysis\SimpleCipher\PlainCipherPair.cs" />
     <Compile Include="Cryptography\Analysis\SimpleCipher\SimpleCipherAnalyzer.cs" />
-    <Compile Include="Cryptography\FEAL-4\Feal4Analyzer.cs" />
     <Compile Include="Cryptography\FEAL-4\Feal4Encryptor.cs" />
     <Compile Include="Cryptography\FEAL-4\Feal4Helper.cs" />
     <Compile Include="Cryptography\FEAL-4\Feal4SubKeysGenerator.cs" />
     <Compile Include="Cryptography\OneRoundSimpleCipher\OneRoundSimpleCipher.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="IntellectualSystem\Intellect.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Random\UsualRandom.cs" />
