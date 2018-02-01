@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using BenchmarkDotNet.Attributes;
 
 namespace NormalGraduateWork.Cryptography.Aes16
 {
@@ -13,7 +15,11 @@ namespace NormalGraduateWork.Cryptography.Aes16
                 throw new ArgumentException("Plaintext length should be even number");
             
             var subKeys = aesSubKeysGenerator.GetAllSubKeys(key);
+            return Encrypt(plainText, subKeys);
+        }
 
+        public byte[] Encrypt(byte[] plainText, IList<byte[]> subKeys)
+        {
             var encryptionResult = new byte[plainText.Length];
             for (var i = 0; i < plainText.Length; i += 2)
             {

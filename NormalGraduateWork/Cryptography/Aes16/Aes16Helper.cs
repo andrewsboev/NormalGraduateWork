@@ -51,7 +51,34 @@ namespace NormalGraduateWork.Cryptography.Aes16
             {0b00000111, 0b00001111}
         };
         
+        private static readonly byte[,] FirstArray = new[,]
+        {
+            {(byte)1, (byte)4},
+            {(byte)4, (byte)1}
+        };
+        
+        private static readonly byte[,] SecondArray = new[,]
+        {
+            {(byte) 9, (byte) 2},
+            {(byte) 2, (byte) 9}
+        };
+        
         private static readonly Aes16MatrixMultiplier aes16MatrixMultiplier = new Aes16MatrixMultiplier();
+        
+        private static readonly Dictionary<byte, byte> subNib = new Dictionary<byte, byte>();
+        private static readonly Dictionary<byte, byte> rotNib = new Dictionary<byte, byte>();
+
+        static Aes16Helper()
+        {
+            for (var i = 0; i <= 255; ++i)
+            {
+                var b = (byte) i;
+                var nibbled = InternalSubNib(b);
+                subNib[b] = nibbled;
+                var rotated = InternalRotNib(b);
+                rotNib[b] = rotated;
+            }
+        }
 
         public static byte[] AddRoundKey(byte[] bytes, byte[] roundKey)
         {
@@ -68,8 +95,13 @@ namespace NormalGraduateWork.Cryptography.Aes16
             var newSecondByte = (byte) ((bytes[1] & 0b11110000) | secondFourBitsOfFirstByte);
             return new[] {newFirstByte, newSecondByte};
         }
-        
+
         public static byte SubNib(byte b)
+        {
+            return subNib[b];
+        }
+        
+        private static byte InternalSubNib(byte b)
         {
             var firstHalfByte = (byte) ((0b11110000 & b) >> 4);
             var secondHalfByte = (byte) (0b00001111 & b);
@@ -103,22 +135,13 @@ namespace NormalGraduateWork.Cryptography.Aes16
 
         public static byte[] MixColumns(byte[] bytes)
         {
-            var firstArray = new[,]
-            {
-                {(byte)1, (byte)4},
-                {(byte)4, (byte)1}
-            };
-            return InternalMixColumns(bytes, firstArray);
+            return InternalMixColumns(bytes, FirstArray);
         }
 
         public static byte[] InverseMixColumns(byte[] bytes)
         {
-            var firstArray = new[,]
-            {
-                {(byte) 9, (byte) 2},
-                {(byte) 2, (byte) 9}
-            };
-            return InternalMixColumns(bytes, firstArray);
+            
+            return InternalMixColumns(bytes, SecondArray);
         }
 
         private static byte[] InternalMixColumns(byte[] bytes, byte[,] matrix)
@@ -138,6 +161,11 @@ namespace NormalGraduateWork.Cryptography.Aes16
         }
 
         public static byte RotNib(byte b)
+        {
+            return rotNib[b];
+        }
+
+        private static byte InternalRotNib(byte b)
         {
             var firstFourBits = b & 0b11110000;
             var secondFourBits = b & 0b00001111;

@@ -1,149 +1,261 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.IO;
+using System.Security.Cryptography;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Validators;
 using NormalGraduateWork.Cryptography.Aes16;
+using NormalGraduateWork.Cryptography.Analysis.SimpleCipher;
+using NormalGraduateWork.Extensions;
+using NormalGraduateWork.Random;
 
 namespace NormalGraduateWork.Cryptography.Analysis
 {
     public class Aes16Analyzer
     {
-        public byte[] Analyze()
-        {
-            var result = BuildDifferentialTable();
-            File.WriteAllText("D:\\data12332.txt", $"{result[0]} {result[1]} {result[2]} {Environment.NewLine}");
-            var result2 = Build2(result[1]);
-            File.AppendAllText("D:\\data12332.txt", $"{result2[0]} {result2[1]} {result2[2]} {Environment.NewLine}");
-            return null;
-        }
+        private readonly Aes16Encryptor aes16Encryptor = new Aes16Encryptor();
+        private readonly Aes16SubKeysGenerator aes16SubKeysGenerator = new Aes16SubKeysGenerator();
+        private byte[] key;
+        private readonly IList<byte[]> subKeys;
+        private readonly ushort firstSubKey;
+        private readonly ushort secondSubKey;
+        private readonly ushort thirdSubKey;
+        
+        // 1-7424-53255 (16384-4096)
+        private readonly ushort[] inDiff1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; 
+        private readonly ushort[] inDiff2 = {7424, 49920, 33280, 13312, 26624, 16640, 23552, 40704, 43776, 10496};
+        private readonly ushort[] outDiff2 = {53255, 20482, 61443, 8196, 4111, 16397, 32773, 45070, 36874, 12299};
+        
+        private readonly UsualRandom random = new UsualRandom();
 
-        private void Do(int diff1, int diff2, int diff3)
+        private readonly int numPairs = 128;
+        private readonly Dictionary<ushort, ushort> firstSboxDict;
+        private readonly Dictionary<ushort, ushort> secondSboxDict;
+        
+        public Aes16Analyzer()
         {
-            var firstList = new List<Tuple<int, int>>();
-            var secondList = new List<Tuple<int, int>>();
+            key = new byte[2];
+            new RNGCryptoServiceProvider().GetBytes(key);
+            subKeys = aes16SubKeysGenerator.GetAllSubKeys(key);
+            firstSubKey = subKeys[0].ToUInt16();
+            secondSubKey = subKeys[1].ToUInt16();
+            thirdSubKey = subKeys[2].ToUInt16();
+            
+            firstSboxDict = new Dictionary<ushort, ushort>();
+            secondSboxDict = new Dictionary<ushort, ushort>();
             for (var i = 0; i <= 65535; ++i)
             {
-                var first = i;
-                var second = first ^ diff1;
-                var firstAfter = FirstSbox(first);
-                var secondAfter = FirstSbox(second);
-                var xoredAfter = firstAfter ^ secondAfter;
-                if (xoredAfter == diff2)
-                    firstList.Add(Tuple.Create(first, (int)firstAfter));
-
-                second = first ^ diff2;
-                firstAfter = SecondSbox(first);
-                secondAfter = SecondSbox(second);
-                xoredAfter = firstAfter ^ secondAfter;
-                if (xoredAfter == diff3)
-                    secondList.Add(Tuple.Create(first, (int)firstAfter));
+                firstSboxDict[(ushort) i] = FirstSbox((ushort) i);
+                secondSboxDict[(ushort) i] = SecondSbox((ushort) i);
             }
+        }
 
-            var numPairs = 10;
-            var gp = FindGoodPair(diff1, diff3);
-            for (var i = 0; i < firstList.Count; ++i)
-            {
-                for (var j = 0; j < secondList.Count; ++j)
-                {
-                    var k0 = (ushort) (gp.Item1 ^ firstList[i].Item1);
-                    var k1 = (ushort) (firstList[i].Item2 ^ secondList[i].Item1);
-                    var k3 = (ushort) (secondList[i].Item2 ^ gp.Item2);
-
-                    for (var k = 0; k < numPairs; ++k)
-                    {
-                        // если что-то успешно не зашифровалось как надо, то плохо, не тот ключ
-                    }
-                    
-                }
-            }
-            
+        public void Method()
+        {
+            var result = BuildDifferentialTable();
+            var result2 = Build2(result);
+            foreach (var x in result2)
+                File.AppendAllText("D:\\data12332.txt", 
+                    $"{x.Item1.Item1} {x.Item1.Item2} {x.Item2.Item1} {{{x.Item1.Item3},{x.Item2.Item2}}}{Environment.NewLine}");
         }
         
-        private Tuple<int, int> FindGoodPair(int inDiff, int outDiff)
+        public void Analyze()
         {
-            for (var i = 0; i <= 65536; ++i)
+            var correctKey = 0;
+            var attemptCount = 65536;
+            for (var index = 0; index < 10; ++index)
+            {
+                var inDiff1Value = inDiff1[index];
+                var inDiff2Value = inDiff2[index];
+                var outDiff1Value = outDiff2[index];
+
+                var plainCipherPairs = BuildPlainCipherPairs();
+                var lists = GetLists(inDiff1Value, inDiff2Value, outDiff1Value);
+                var goodPair = FindGoodPair(inDiff1Value, outDiff1Value);
+
+                var suggestedKey = Do(lists.Item1, lists.Item2, goodPair, plainCipherPairs);
+                
+                var rightKey = suggestedKey != null && !(suggestedKey[0] != firstSubKey || suggestedKey[1] != secondSubKey || suggestedKey[2] != thirdSubKey);
+                Console.WriteLine($"{rightKey}");
+            }
+        }
+
+        // ok
+        private Tuple<ushort, ushort>[] BuildPlainCipherPairs()
+        {
+            var result = new Tuple<ushort, ushort>[numPairs];
+            for (var i = 0; i < numPairs; ++i)
+            {
+                var plainText = new byte[2];
+                random.GetBytes(plainText);
+                var plainTextAsUshort = plainText.ToUInt16();
+                var cipherText = aes16Encryptor.Encrypt(plainText, key);
+                var cipherTextAsUshort = cipherText.ToUInt16();
+                result[i] = Tuple.Create(plainTextAsUshort, cipherTextAsUshort);
+            }
+            return result;
+        }
+
+        private Tuple<Tuple<ushort, ushort>[], Tuple<ushort, ushort>[]> GetLists(ushort diff1, ushort diff2, ushort diff3)
+        {
+            var index1 = 0;
+            var firstList = new Tuple<ushort, ushort>[16384];
+            var index2 = 0;
+            var secondList = new Tuple<ushort, ushort>[4096];
+            for (var i = 0; i <= 65535; ++i)
+            {
+                var first = (ushort)i;
+                var second = (ushort)(first ^ diff1);
+                var firstAfter = firstSboxDict[first];
+                var secondAfter = firstSboxDict[second];
+                var xoredAfter = (ushort)(firstAfter ^ secondAfter);
+                if (xoredAfter == diff2)
+                    firstList[index1++] = Tuple.Create(first, firstAfter);
+
+                second = (ushort)(first ^ diff2);
+                firstAfter = secondSboxDict[first];
+                secondAfter = secondSboxDict[second];
+                xoredAfter = (ushort)(firstAfter ^ secondAfter);
+                if (xoredAfter == diff3)
+                    secondList[index2++] = Tuple.Create(first, firstAfter);
+            }
+            return Tuple.Create(firstList, secondList);
+        }
+
+        private List<ushort> Do(Tuple<ushort, ushort>[] firstList, Tuple<ushort, ushort>[] secondList, 
+            Tuple<ushort, ushort> goodPair, Tuple<ushort, ushort>[] plainCipherPairs)
+        {
+            for (var i = 0; i < firstList.Length; ++i)
+            {
+                for (var j = 0; j < secondList.Length; ++j)
+                {
+                    var k0 = (ushort) (goodPair.Item1 ^ firstList[i].Item1);
+                    var k1 = (ushort) (firstList[i].Item2 ^ secondList[j].Item1);
+                    var k2 = (ushort) (secondList[j].Item2 ^ goodPair.Item2);
+
+                    var subKeys = new List<byte[]>()
+                    {
+                        k0.GetBytes(),
+                        k1.GetBytes(),
+                        k2.GetBytes()
+                    };
+
+                    var badKey = false;
+                    foreach (var plainCipherPair in plainCipherPairs)
+                    {
+                        var plainBytes = plainCipherPair.Item1.GetBytes();
+                        
+                        var encrypted = aes16Encryptor.Encrypt(plainBytes, subKeys);
+                        var cipherAsUshort = encrypted.ToUInt16();
+                        
+                        if (cipherAsUshort != plainCipherPair.Item2)
+                        {
+                            badKey = true;
+                            break;
+                        }    
+                    }
+
+                    if (!badKey)
+                        return new List<ushort>
+                        {
+                            k0, k1, k2
+                        };
+                }
+            }
+            return null;
+        }
+        
+        private Tuple<ushort, ushort> FindGoodPair(ushort inDiff, ushort outDiff)
+        {
+            for (var i = 0; i <= 65535; ++i)
             {
                 var first = (ushort)i;
                 var second = (ushort)(first ^ inDiff);
-                var firstEncrypted = BitConverter.ToUInt16(
-                    new Aes16Encryptor().Encrypt(BitConverter.GetBytes(first), new byte[]{}), 0);
-                var secondEncrypted = BitConverter.ToInt16(
-                    new Aes16Encryptor().Encrypt(BitConverter.GetBytes(second), new byte[] { }), 0);
-                var xored = firstEncrypted ^ secondEncrypted;
+                var firstBytes = first.GetBytes();
+                var secondBytes = second.GetBytes();
+                
+                var firstEncrypted = aes16Encryptor.Encrypt(firstBytes, key).ToUInt16();
+                var secondEncrypted = aes16Encryptor.Encrypt(secondBytes, key).ToUInt16();
+                var xored = (ushort) (firstEncrypted ^ secondEncrypted);
                 if (xored == outDiff)
-                    return Tuple.Create((int)first, (int)firstEncrypted);
+                    return Tuple.Create(first, firstEncrypted);
             }
-
             return null;
         }
-
-        private int[] Build2(int diff)
+        
+        public ushort FirstSbox(ushort val)
         {
-            var values = new int[65536];
-            var innerMaxIndex = -1;
-            for (var i = 0; i <= 65535; ++i)
-            {
-                var firstComp = i;
-                var secondComp = firstComp ^ diff;
-                var firstAfterSbox = SecondSbox(firstComp);
-                var secondAfterSbox = SecondSbox(secondComp);
-                var xorAfterSbox = firstAfterSbox ^ secondAfterSbox;
-                values[xorAfterSbox]++;
-                if (innerMaxIndex == -1 || values[xorAfterSbox] > values[innerMaxIndex])
-                    innerMaxIndex = xorAfterSbox;
-            }
-            return new int[] {diff, innerMaxIndex, values[innerMaxIndex]};
+            var converted = val.GetBytes();
+            var nibbled = Aes16Helper.NibbleSubstitution(converted);
+            var shifted = Aes16Helper.ShiftRow(nibbled);
+            return Aes16Helper.MixColumns(shifted).ToUInt16();
         }
 
-        private int[] BuildDifferentialTable()
+        public ushort SecondSbox(ushort val)
         {
-            var maxInDiff = -1;
-            var maxOutDiff = -1;
-            var maxValue = -1;
-            
-            for (var inDiff = 0; inDiff <= 65535; ++inDiff)
+            var converted = val.GetBytes();
+            var nibbled = Aes16Helper.NibbleSubstitution(converted);
+            return Aes16Helper.ShiftRow(nibbled).ToUInt16();
+        }
+
+        private List<Tuple<Tuple<int, int, int>, Tuple<int, int>>> Build2(List<Tuple<int, int, int>> list)
+        {
+            var result = new List<Tuple<Tuple<int, int, int>, Tuple<int, int>>>();
+            foreach (var item in list)
             {
-                Console.WriteLine($"inDiff = {inDiff}");
                 var values = new int[65536];
                 var innerMaxIndex = -1;
                 for (var i = 0; i <= 65535; ++i)
                 {
-                    var firstComp = i;
-                    var secondComp = firstComp ^ inDiff;
-                    var firstAfterSbox = FirstSbox(firstComp);
-                    var secondAfterSbox = FirstSbox(secondComp);
+                    var firstComp = (ushort) i;
+                    var secondComp = (ushort) (firstComp ^ item.Item2);
+                    var firstAfterSbox = secondSboxDict[firstComp];
+                    var secondAfterSbox = secondSboxDict[secondComp];
                     var xorAfterSbox = firstAfterSbox ^ secondAfterSbox;
                     values[xorAfterSbox]++;
                     if (innerMaxIndex == -1 || values[xorAfterSbox] > values[innerMaxIndex])
                         innerMaxIndex = xorAfterSbox;
                 }
 
-                if (maxValue == -1 || maxValue < values[innerMaxIndex])
+                var secondTuple = Tuple.Create(innerMaxIndex, values[innerMaxIndex]);
+                var common = Tuple.Create(item, secondTuple);
+                result.Add(common);
+            }
+            return result;
+        }
+
+        private List<Tuple<int, int, int>> BuildDifferentialTable()
+        {
+            var list = new List<Tuple<int, int, int>>();
+            
+            for (var inDiff = 1; inDiff <= 65535; ++inDiff)
+            {
+                Console.WriteLine($"inDiff = {inDiff}");
+                var values = new int[65536];
+                for (var i = 0; i <= 65535; ++i)
                 {
-                    maxInDiff = inDiff;
-                    maxOutDiff = innerMaxIndex;
-                    maxValue = values[innerMaxIndex];
+                    var firstComp = (ushort)i;
+                    var secondComp = (ushort) (firstComp ^ inDiff);
+                    var firstAfterSbox = firstSboxDict[firstComp];
+                    var secondAfterSbox = firstSboxDict[secondComp];
+                    var xorAfterSbox = firstAfterSbox ^ secondAfterSbox;
+                    values[xorAfterSbox]++;
+
+                    if (list.Count < 10)
+                        list.Add(Tuple.Create(inDiff, xorAfterSbox, values[xorAfterSbox]));
+                    else
+                        for (var k = 0; k < list.Count; ++k)
+                            if (list[k].Item3 < values[xorAfterSbox])
+                            {
+                                list[k] = Tuple.Create(inDiff, xorAfterSbox, values[xorAfterSbox]);
+                                break;
+                            }
                 }
             }
-
-            return new[] {maxInDiff, maxOutDiff, maxValue};
-        }
-
-        private ushort FirstSbox(int val)
-        {
-            var asUshort = (ushort) val;
-            var converted = BitConverter.GetBytes(asUshort);
-            var nibbled = Aes16Helper.NibbleSubstitution(converted);
-            var shifted = Aes16Helper.ShiftRow(nibbled);
-            return BitConverter.ToUInt16(Aes16Helper.MixColumns(shifted), 0);
-        }
-
-        private ushort SecondSbox(int val)
-        {
-            var asUshort = (ushort) val;
-            var converted = BitConverter.GetBytes(asUshort);
-            var nibbled = Aes16Helper.NibbleSubstitution(converted);
-            return BitConverter.ToUInt16(Aes16Helper.ShiftRow(nibbled), 0);
+            foreach (var item in list)
+                Console.WriteLine($"{item.Item1} {item.Item2} {item.Item3}");
+            return list;
         }
     }
-    
 }

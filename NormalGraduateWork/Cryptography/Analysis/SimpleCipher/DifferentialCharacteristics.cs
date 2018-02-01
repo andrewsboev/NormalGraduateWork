@@ -4,6 +4,8 @@
     {
         public int InputDifferential { get; }
         public int OutputDifferential { get; }
+        
+        public int Count { get; set; }
 
         public DifferentialCharacteristic(int inputDifferential, int outputDifferential)
         {
