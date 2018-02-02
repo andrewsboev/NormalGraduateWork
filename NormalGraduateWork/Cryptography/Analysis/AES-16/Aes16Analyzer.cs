@@ -1,12 +1,9 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Security.Cryptography;
-using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Validators;
 using NormalGraduateWork.Cryptography.Aes16;
-using NormalGraduateWork.Cryptography.Analysis.SimpleCipher;
 using NormalGraduateWork.Extensions;
 using NormalGraduateWork.Random;
 
@@ -17,10 +14,10 @@ namespace NormalGraduateWork.Cryptography.Analysis
         private readonly Aes16Encryptor aes16Encryptor = new Aes16Encryptor();
         private readonly Aes16SubKeysGenerator aes16SubKeysGenerator = new Aes16SubKeysGenerator();
         private byte[] key;
-        private readonly IList<byte[]> subKeys;
-        private readonly ushort firstSubKey;
-        private readonly ushort secondSubKey;
-        private readonly ushort thirdSubKey;
+        private  IList<byte[]> subKeys;
+        private  ushort firstSubKey;
+        private  ushort secondSubKey;
+        private  ushort thirdSubKey;
         
         // 1-7424-53255 (16384-4096)
         private readonly ushort[] inDiff1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; 
@@ -51,6 +48,8 @@ namespace NormalGraduateWork.Cryptography.Analysis
             }
         }
 
+        private Dictionary<Tuple<ushort, ushort>, ushort> encDict = new Dictionary<Tuple<ushort, ushort>, ushort>();
+        
         public void Method()
         {
             var result = BuildDifferentialTable();
@@ -64,20 +63,54 @@ namespace NormalGraduateWork.Cryptography.Analysis
         {
             var correctKey = 0;
             var attemptCount = 65536;
+
+            /*encDict = new Dictionary<Tuple<ushort, ushort>, ushort>();
+            for (var i = 0; i <= 65535; ++i)
+            {
+                var tkey = ((ushort) i).GetBytes();
+                for (var j = 0; j < plainCipherPairs.Length; ++j)
+                {
+                    var plain = plainCipherPairs[j].Item1;
+                    var cipher = aes16Encryptor.Encrypt(plain.GetBytes(), tkey);
+                    encDict[Tuple.Create(plain, (ushort) i)] = cipher.ToUInt16();
+                }
+            }*/
+            
+            var inDiff1Value = inDiff1[0];
+            var inDiff2Value = inDiff2[0];
+            var outDiff1Value = outDiff2[0];
+
+            var lists = GetLists(inDiff1Value, inDiff2Value, outDiff1Value);
+            var goodPair = FindGoodPair(inDiff1Value, outDiff1Value);
+            
             for (var index = 0; index < 10; ++index)
             {
-                var inDiff1Value = inDiff1[index];
-                var inDiff2Value = inDiff2[index];
-                var outDiff1Value = outDiff2[index];
-
-                var plainCipherPairs = BuildPlainCipherPairs();
-                var lists = GetLists(inDiff1Value, inDiff2Value, outDiff1Value);
-                var goodPair = FindGoodPair(inDiff1Value, outDiff1Value);
-
-                var suggestedKey = Do(lists.Item1, lists.Item2, goodPair, plainCipherPairs);
+                Console.WriteLine($"{index}-th index");
+                var success = 0;
+                var sw = Stopwatch.StartNew();
                 
-                var rightKey = suggestedKey != null && !(suggestedKey[0] != firstSubKey || suggestedKey[1] != secondSubKey || suggestedKey[2] != thirdSubKey);
-                Console.WriteLine($"{rightKey}");
+                for (var i = 0; i <= 65535; ++i)
+                {
+                    //Console.WriteLine($"key is {i}");
+                    key = ((ushort) i).GetBytes();
+                    subKeys = aes16SubKeysGenerator.GetAllSubKeys(key);
+                    firstSubKey = subKeys[0].ToUInt16();
+                    secondSubKey = subKeys[1].ToUInt16();
+                    thirdSubKey = subKeys[2].ToUInt16();
+                    var plainCipherPairs = BuildPlainCipherPairs();
+                    
+                    var suggestedKey = Do(lists.Item1, goodPair, plainCipherPairs);
+
+                    var rightKey = suggestedKey != null &&
+                                   !(suggestedKey[0] != firstSubKey || suggestedKey[1] != secondSubKey ||
+                                     suggestedKey[2] != thirdSubKey);
+                    if (rightKey)
+                    {
+                        success++;
+                    }
+                }
+                Console.WriteLine(sw.Elapsed);
+                Console.WriteLine($"success rate is {success}/65536");
             }
         }
 
@@ -123,44 +156,37 @@ namespace NormalGraduateWork.Cryptography.Analysis
             return Tuple.Create(firstList, secondList);
         }
 
-        private List<ushort> Do(Tuple<ushort, ushort>[] firstList, Tuple<ushort, ushort>[] secondList, 
-            Tuple<ushort, ushort> goodPair, Tuple<ushort, ushort>[] plainCipherPairs)
+        private List<ushort> Do(Tuple<ushort, ushort>[] firstList, Tuple<ushort, ushort> goodPair, 
+            Tuple<ushort, ushort>[] plainCipherPairs)
         {
             for (var i = 0; i < firstList.Length; ++i)
             {
-                for (var j = 0; j < secondList.Length; ++j)
+                var k0 = (ushort) (goodPair.Item1 ^ firstList[i].Item1);
+                var badKey = false;
+
+                foreach (var plainCipherPair in plainCipherPairs)
                 {
-                    var k0 = (ushort) (goodPair.Item1 ^ firstList[i].Item1);
-                    var k1 = (ushort) (firstList[i].Item2 ^ secondList[j].Item1);
-                    var k2 = (ushort) (secondList[j].Item2 ^ goodPair.Item2);
-
-                    var subKeys = new List<byte[]>()
+                    var plainBytes = plainCipherPair.Item1.GetBytes();
+                    
+                    var encrypted = aes16Encryptor.Encrypt(plainBytes, k0.GetBytes());
+                    var cipherAsUshort = encrypted.ToUInt16();
+                    
+                    if (cipherAsUshort != plainCipherPair.Item2)
                     {
-                        k0.GetBytes(),
-                        k1.GetBytes(),
-                        k2.GetBytes()
+                        badKey = true;
+                        break;
+                    }    
+                }
+
+                if (!badKey)
+                {
+                    var subkeys = aes16SubKeysGenerator.GetAllSubKeys(k0.GetBytes());
+                    return new List<ushort>
+                    {
+                        k0,
+                        subkeys[1].ToUInt16(),
+                        subkeys[2].ToUInt16()
                     };
-
-                    var badKey = false;
-                    foreach (var plainCipherPair in plainCipherPairs)
-                    {
-                        var plainBytes = plainCipherPair.Item1.GetBytes();
-                        
-                        var encrypted = aes16Encryptor.Encrypt(plainBytes, subKeys);
-                        var cipherAsUshort = encrypted.ToUInt16();
-                        
-                        if (cipherAsUshort != plainCipherPair.Item2)
-                        {
-                            badKey = true;
-                            break;
-                        }    
-                    }
-
-                    if (!badKey)
-                        return new List<ushort>
-                        {
-                            k0, k1, k2
-                        };
                 }
             }
             return null;
