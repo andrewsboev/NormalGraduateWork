@@ -59,17 +59,12 @@ namespace NormalGraduateWork.Tests
                 [8] = true,
                 [9] = false
             };
-            var encryptor1 = new SDES("1000110010");
             var encryptor2 = new SimplifiedDes();
             for (var i = 0; i < 256; ++i)
             {
                 var asByte = (byte) i;
-                var encrypted1 = encryptor1.Encrypt(asByte);
                 var encrypted2 = encryptor2.Encrypt(asByte, key);
-                encrypted1.Should().Be(encrypted2);
-                var decrypted1 = encryptor1.Decrypt(encrypted1);
-                var decrypted2 = encryptor2.Decrypt(encrypted2, key);
-                decrypted1.Should().Be(decrypted2);
+                var decrypted1 = encryptor2.Decrypt(encrypted2, key);
                 decrypted1.Should().Be(asByte);
             }
         }

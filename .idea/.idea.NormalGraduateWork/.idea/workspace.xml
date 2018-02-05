@@ -2,29 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cef66da0-8335-45fb-938d-055ca2f1d147" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/BitArrayExtensionsTests.cs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDesHelper.cs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDesSubKeysGenerator.cs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork/Extensions/BitArrayExtensions.cs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork/Extensions/ByteExtensions.cs" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NormalGraduateWork/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.NormalGraduateWork/.idea/contentModel.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NormalGraduateWork/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.NormalGraduateWork/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/NormalGraduateWork.Tests.csproj" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/NormalGraduateWork.Tests.csproj" />
+      <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.Tests.dll" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.Tests.dll" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.Tests.pdb" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.Tests.pdb" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.exe" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.exe" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.pdb" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.pdb" />
-      <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.csproj.CoreCompileInputs.cache" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.csprojResolveAssemblyReference.cache" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.dll" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.dll" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.pdb" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.pdb" />
-      <change beforePath="$PROJECT_DIR$/NormalGraduateWork/NormalGraduateWork.csproj" afterPath="$PROJECT_DIR$/NormalGraduateWork/NormalGraduateWork.csproj" />
-      <change beforePath="$PROJECT_DIR$/NormalGraduateWork/Program.cs" afterPath="$PROJECT_DIR$/NormalGraduateWork/Program.cs" />
+      <change beforePath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs" afterPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork/bin/Debug/NormalGraduateWork.exe" afterPath="$PROJECT_DIR$/NormalGraduateWork/bin/Debug/NormalGraduateWork.exe" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork/bin/Debug/NormalGraduateWork.pdb" afterPath="$PROJECT_DIR$/NormalGraduateWork/bin/Debug/NormalGraduateWork.pdb" />
-      <change beforePath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.csproj.CoreCompileInputs.cache" />
+      <change beforePath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.csprojResolveAssemblyReference.cache" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.exe" afterPath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.exe" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.pdb" afterPath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.pdb" />
     </list>
@@ -36,11 +26,86 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SimplifiedDes.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <marker date="1517838418688" expanded="false" signature="6:149" ph="..." />
+                <marker date="1517838418688" expanded="true" signature="197:6168" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="230:6166" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="537:1979" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="2035:2188" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="2243:2395" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="2470:2779" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="2853:3217" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="3269:3477" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="3538:3778" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="3839:4756" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="4034:4328" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="4818:5235" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="5283:5697" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="5356:5650" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="5746:6160" ph="{...}" />
+                <marker date="1517838418688" expanded="true" signature="5819:6113" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimplifiedDesHelper.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDesHelper.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+              <folding>
+                <marker date="1517828756297" expanded="true" signature="73:2425" ph="{...}" />
+                <marker date="1517828756297" expanded="true" signature="119:2423" ph="{...}" />
+                <marker date="1517828756297" expanded="true" signature="187:391" ph="{...}" />
+                <marker date="1517828756297" expanded="true" signature="455:695" ph="{...}" />
+                <marker date="1517828756297" expanded="true" signature="770:973" ph="{...}" />
+                <marker date="1517828756297" expanded="true" signature="1062:1263" ph="{...}" />
+                <marker date="1517828756297" expanded="true" signature="1332:1695" ph="{...}" />
+                <marker date="1517828756297" expanded="true" signature="1390:1684" ph="{...}" />
+                <marker date="1517828756297" expanded="true" signature="1758:1961" ph="{...}" />
+                <marker date="1517828756297" expanded="true" signature="1816:1950" ph="{...}" />
+                <marker date="1517828756297" expanded="true" signature="2033:2417" ph="{...}" />
+                <marker date="1517828756297" expanded="true" signature="2092:2406" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimplifiedDesTests.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="63" column="13" lean-forward="true" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+              <folding>
+                <marker date="1517836421526" expanded="false" signature="6:184" ph="..." />
+                <marker date="1517836421526" expanded="true" signature="220:2660" ph="{...}" />
+                <marker date="1517836421526" expanded="true" signature="276:2658" ph="{...}" />
+                <marker date="1517836421526" expanded="true" signature="324:827" ph="{...}" />
+                <marker date="1517836421526" expanded="true" signature="384:540" ph="{...}" />
+                <marker date="1517836421526" expanded="true" signature="879:1216" ph="{...}" />
+                <marker date="1517836421526" expanded="true" signature="901:1206" ph="/* for (var i = 0; i &lt; 256; ++i) ... */" />
+                <marker date="1517836421526" expanded="true" signature="1268:1984" ph="{...}" />
+                <marker date="1517836421526" expanded="true" signature="1330:1630" ph="{...}" />
+                <marker date="1517836421526" expanded="true" signature="1723:1974" ph="{...}" />
+                <marker date="1517836421526" expanded="true" signature="2031:2652" ph="{...}" />
+                <marker date="1517836421526" expanded="true" signature="2094:2193" ph="{...}" />
+                <marker date="1517836421526" expanded="true" signature="2248:2347" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Console</find>
       <find>ShiftRow</find>
       <find>int</find>
       <find>BitConve</find>
@@ -56,6 +121,7 @@
       <find>p4</find>
       <find>Xor</find>
       <find>.Xor</find>
+      <find>Console</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -241,12 +307,6 @@
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="NormalGraduateWork (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="NormalGraduateWork" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Extensions" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="NormalGraduateWork (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="NormalGraduateWork.Tests" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
@@ -313,12 +373,12 @@
       <workItem from="1517480763351" duration="5551000" />
       <workItem from="1517486496198" duration="8828000" />
       <workItem from="1517814140712" duration="8688000" />
-      <workItem from="1517828023247" duration="6835000" />
+      <workItem from="1517828023247" duration="9491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83722000" />
+    <option name="totallyTimeSpent" value="86378000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -331,6 +391,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-1" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -340,7 +401,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16822916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15989584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -416,71 +477,6 @@
           <option name="timeStamp" value="141" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs</url>
-          <line>509</line>
-          <properties documentPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
-            <startOffsets>
-              <startOffset value="15320" />
-            </startOffsets>
-            <endOffsets>
-              <endOffset value="15393" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs</url>
-          <line>93</line>
-          <properties documentPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
-            <startOffsets>
-              <startOffset value="2644" />
-            </startOffsets>
-            <endOffsets>
-              <endOffset value="2711" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="148" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs</url>
-          <line>92</line>
-          <properties documentPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
-            <startOffsets>
-              <startOffset value="2590" />
-            </startOffsets>
-            <endOffsets>
-              <endOffset value="2631" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs</url>
-          <line>351</line>
-          <properties documentPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
-            <startOffsets>
-              <startOffset value="10401" />
-            </startOffsets>
-            <endOffsets>
-              <endOffset value="10412" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs</url>
-          <line>508</line>
-          <properties documentPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
-            <startOffsets>
-              <startOffset value="-1" />
-            </startOffsets>
-            <endOffsets>
-              <endOffset value="-1" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="152" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs</url>
           <line>43</line>
           <properties documentPath="$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs">
@@ -517,33 +513,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding>
-            <marker date="1517389032016" expanded="true" signature="6:167" ph="..." />
-            <marker date="1517389032016" expanded="true" signature="169:425" ph="/* ReSharper disable SuggestVarOrType_BuiltInTypes ... */" />
-            <marker date="1517389032016" expanded="true" signature="490:625" ph="..." />
-            <marker date="1517389032016" expanded="true" signature="661:13347" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="1307:2003" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="1684:1887" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="2038:7257" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="2420:2571" ph="/* for (var i = 0; i &lt; fourthRoundUndoneFinalOperation.Count; ++i) ... */" />
-            <marker date="1517389032016" expanded="true" signature="4573:6256" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="4766:5988" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="5478:5660" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="5820:5970" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="6039:6242" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="7096:7246" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="7366:7777" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="7473:7724" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="7913:9458" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="8002:9422" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="9582:10942" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="9692:10905" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="11036:12074" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="11133:12037" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="12160:13341" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="12269:12725" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="12778:13304" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -737,40 +707,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-          <folding>
-            <marker date="1517571714561" expanded="false" signature="6:241" ph="..." />
-            <marker date="1517571714561" expanded="true" signature="293:11837" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="326:11835" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="1340:2008" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="1834:1998" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="2164:2503" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="2542:4772" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="2636:3147" ph="/* encDict = new Dictionary&lt;Tuple&lt;ushort, ushort&gt;, ushort&gt;(); ... */" />
-            <marker date="1517571714561" expanded="true" signature="3505:4762" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="3721:4630" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="4533:4612" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="4851:5404" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="4970:5367" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="5528:6586" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="5763:6520" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="6741:7889" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="6806:7854" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="6996:7478" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="7342:7456" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="7508:7840" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="7677:7821" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="7980:8668" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="8035:8633" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="8721:8974" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="9020:9214" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="9322:10396" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="9454:10359" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="9602:10160" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="10465:11829" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="10605:11677" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="10770:11663" ph="{...}" />
-            <marker date="1517571714561" expanded="true" signature="11446:11645" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -929,6 +866,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding>
+            <marker date="1517834469615" expanded="true" signature="6:69" ph="..." />
+            <marker date="1517834469615" expanded="true" signature="99:839" ph="{...}" />
+            <marker date="1517834469615" expanded="true" signature="126:837" ph="{...}" />
+            <marker date="1517834469615" expanded="true" signature="172:835" ph="{...}" />
+            <marker date="1517834469615" expanded="true" signature="194:293" ph="/* var summary = BenchmarkRunner.Run&lt;Aes16Analyzer&gt;(); ... */" />
+            <marker date="1517834469615" expanded="true" signature="327:482" ph="/* var encryptor = new SDES(&quot;1000110010&quot;); ... */" />
+            <marker date="1517834469615" expanded="true" signature="567:757" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <marker date="1517838418688" expanded="false" signature="6:149" ph="..." />
+            <marker date="1517838418688" expanded="true" signature="197:6168" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="230:6166" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="537:1979" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="2035:2188" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="2243:2395" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="2470:2779" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="2853:3217" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="3269:3477" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="3538:3778" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="3839:4756" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="4034:4328" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="4818:5235" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="5283:5697" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="5356:5650" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="5746:6160" ph="{...}" />
+            <marker date="1517838418688" expanded="true" signature="5819:6113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDesHelper.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -950,107 +929,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
-          <folding>
-            <marker date="1517834469615" expanded="true" signature="6:69" ph="..." />
-            <marker date="1517834469615" expanded="true" signature="99:839" ph="{...}" />
-            <marker date="1517834469615" expanded="true" signature="126:837" ph="{...}" />
-            <marker date="1517834469615" expanded="true" signature="172:835" ph="{...}" />
-            <marker date="1517834469615" expanded="true" signature="194:293" ph="/* var summary = BenchmarkRunner.Run&lt;Aes16Analyzer&gt;(); ... */" />
-            <marker date="1517834469615" expanded="true" signature="327:482" ph="/* var encryptor = new SDES(&quot;1000110010&quot;); ... */" />
-            <marker date="1517834469615" expanded="true" signature="567:757" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="72" column="47" lean-forward="false" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
+        <state relative-caret-position="540">
+          <caret line="63" column="13" lean-forward="true" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
           <folding>
-            <marker date="1517834845639" expanded="false" signature="6:184" ph="..." />
-            <marker date="1517834845639" expanded="true" signature="220:2943" ph="{...}" />
-            <marker date="1517834845639" expanded="true" signature="276:2941" ph="{...}" />
-            <marker date="1517834845639" expanded="true" signature="324:827" ph="{...}" />
-            <marker date="1517834845639" expanded="true" signature="384:540" ph="{...}" />
-            <marker date="1517834845639" expanded="true" signature="879:1216" ph="{...}" />
-            <marker date="1517834845639" expanded="true" signature="901:1206" ph="/* for (var i = 0; i &lt; 256; ++i) ... */" />
-            <marker date="1517834845639" expanded="true" signature="1268:2267" ph="{...}" />
-            <marker date="1517834845639" expanded="true" signature="1330:1630" ph="{...}" />
-            <marker date="1517834845639" expanded="true" signature="1776:2257" ph="{...}" />
-            <marker date="1517834845639" expanded="true" signature="2314:2935" ph="{...}" />
-            <marker date="1517834845639" expanded="true" signature="2377:2476" ph="{...}" />
-            <marker date="1517834845639" expanded="true" signature="2531:2630" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="572" column="16" lean-forward="false" selection-start-line="572" selection-start-column="16" selection-end-line="572" selection-end-column="16" />
-          <folding>
-            <marker date="1517834782692" expanded="false" signature="6:149" ph="..." />
-            <marker date="1517834782692" expanded="true" signature="197:18704" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="221:11687" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="388:2052" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="491:569" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="2093:2929" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="2970:3228" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="3268:3535" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="3424:3498" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="3575:3794" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="3668:3741" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="3830:4378" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="4462:4759" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="4541:4725" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="4846:5088" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="4934:5054" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="5131:5247" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="5286:5520" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="5596:6189" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="5619:5674" ph="/* 0 1 2 3 4 5 6 7 8 9 ... */" />
-            <marker date="1517834782692" expanded="true" signature="6280:6844" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="6303:6381" ph="/* 0 1 2 3 4 5 6 7 ... */" />
-            <marker date="1517834782692" expanded="true" signature="6897:7255" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="6920:6973" ph="/* 0 1 2 3 ... */" />
-            <marker date="1517834782692" expanded="true" signature="7292:7832" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="7315:7384" ph="/* 0 1 2 3 ... */" />
-            <marker date="1517834782692" expanded="true" signature="7910:8460" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="7933:7980" ph="/* 0 1 2 3 4 5 6 7 ... */" />
-            <marker date="1517834782692" expanded="true" signature="8505:9081" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="8528:8576" ph="/* 0 1 2 3 4 5 6 7 ... */" />
-            <marker date="1517834782692" expanded="true" signature="9146:9414" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="9297:9376" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="9462:9967" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="9717:9787" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="9853:9929" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="10017:10422" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="10471:10778" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="10826:11278" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="11056:11127" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="11167:11241" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="11319:11586" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="11460:11547" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="11632:11681" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="11723:18702" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="12030:13486" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="13542:13695" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="13750:13902" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="13977:14708" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="14782:15539" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="15606:15814" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="15889:16129" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="16204:17250" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="16399:16693" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="17326:17743" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="17805:18219" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="17878:18172" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="18282:18696" ph="{...}" />
-            <marker date="1517834782692" expanded="true" signature="18355:18649" ph="{...}" />
+            <marker date="1517836421526" expanded="false" signature="6:184" ph="..." />
+            <marker date="1517836421526" expanded="true" signature="220:2660" ph="{...}" />
+            <marker date="1517836421526" expanded="true" signature="276:2658" ph="{...}" />
+            <marker date="1517836421526" expanded="true" signature="324:827" ph="{...}" />
+            <marker date="1517836421526" expanded="true" signature="384:540" ph="{...}" />
+            <marker date="1517836421526" expanded="true" signature="879:1216" ph="{...}" />
+            <marker date="1517836421526" expanded="true" signature="901:1206" ph="/* for (var i = 0; i &lt; 256; ++i) ... */" />
+            <marker date="1517836421526" expanded="true" signature="1268:1984" ph="{...}" />
+            <marker date="1517836421526" expanded="true" signature="1330:1630" ph="{...}" />
+            <marker date="1517836421526" expanded="true" signature="1723:1974" ph="{...}" />
+            <marker date="1517836421526" expanded="true" signature="2031:2652" ph="{...}" />
+            <marker date="1517836421526" expanded="true" signature="2094:2193" ph="{...}" />
+            <marker date="1517836421526" expanded="true" signature="2248:2347" ph="{...}" />
           </folding>
         </state>
       </provider>
