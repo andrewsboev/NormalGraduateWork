@@ -2,18 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cef66da0-8335-45fb-938d-055ca2f1d147" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/BitArrayExtensionsTests.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDesHelper.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDesSubKeysGenerator.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork/Extensions/BitArrayExtensions.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/NormalGraduateWork/Extensions/ByteExtensions.cs" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NormalGraduateWork/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.NormalGraduateWork/.idea/contentModel.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NormalGraduateWork/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.NormalGraduateWork/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/NormalGraduateWork.Tests.csproj" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/NormalGraduateWork.Tests.csproj" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.Tests.dll" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.Tests.dll" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.Tests.pdb" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.Tests.pdb" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.exe" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.exe" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.pdb" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/bin/Debug/NormalGraduateWork.pdb" />
+      <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.csproj.CoreCompileInputs.cache" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.csprojResolveAssemblyReference.cache" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.dll" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.dll" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.pdb" afterPath="$PROJECT_DIR$/NormalGraduateWork.Tests/obj/Debug/NormalGraduateWork.Tests.pdb" />
-      <change beforePath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/Analysis/AES-16/Aes16Analyzer.cs" afterPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/Analysis/AES-16/Aes16Analyzer.cs" />
+      <change beforePath="$PROJECT_DIR$/NormalGraduateWork/NormalGraduateWork.csproj" afterPath="$PROJECT_DIR$/NormalGraduateWork/NormalGraduateWork.csproj" />
+      <change beforePath="$PROJECT_DIR$/NormalGraduateWork/Program.cs" afterPath="$PROJECT_DIR$/NormalGraduateWork/Program.cs" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork/bin/Debug/NormalGraduateWork.exe" afterPath="$PROJECT_DIR$/NormalGraduateWork/bin/Debug/NormalGraduateWork.exe" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork/bin/Debug/NormalGraduateWork.pdb" afterPath="$PROJECT_DIR$/NormalGraduateWork/bin/Debug/NormalGraduateWork.pdb" />
-      <change beforePath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.csprojResolveAssemblyReference.cache" />
+      <change beforePath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.csproj.CoreCompileInputs.cache" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.exe" afterPath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.exe" />
       <change beforePath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.pdb" afterPath="$PROJECT_DIR$/NormalGraduateWork/obj/Debug/NormalGraduateWork.pdb" />
     </list>
@@ -25,67 +36,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Aes16Analyzer.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Analysis/AES-16/Aes16Analyzer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="93" column="55" lean-forward="true" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
-              <folding>
-                <marker date="1517571714561" expanded="true" signature="6:241" ph="..." />
-                <marker date="1517571714561" expanded="true" signature="293:11837" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="326:11835" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="1340:2008" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="1834:1998" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="2164:2503" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="2542:4772" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="2636:3147" ph="/* encDict = new Dictionary&lt;Tuple&lt;ushort, ushort&gt;, ushort&gt;(); ... */" />
-                <marker date="1517571714561" expanded="true" signature="3505:4762" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="3721:4630" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="4533:4612" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="4851:5404" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="4970:5367" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="5528:6586" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="5763:6520" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="6741:7889" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="6806:7854" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="6996:7478" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="7342:7456" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="7508:7840" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="7677:7821" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="7980:8668" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="8035:8633" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="8721:8974" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="9020:9214" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="9322:10396" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="9454:10359" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="9602:10160" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="10465:11829" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="10605:11677" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="10770:11663" ph="{...}" />
-                <marker date="1517571714561" expanded="true" signature="11446:11645" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Aes16SubKeysGenerator.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Aes16/Aes16SubKeysGenerator.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <marker date="1517567450378" expanded="false" signature="6:34" ph="..." />
-                <marker date="1517567450378" expanded="true" signature="1047:1317" ph="{...}" />
-                <marker date="1517567450378" expanded="true" signature="1047:1426" ph="{...}" />
-                <marker date="1517567450378" expanded="true" signature="1047:1428" ph="{...}" />
-                <marker date="1517567450378" expanded="true" signature="1376:1420" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -100,30 +51,52 @@
       <find>new</find>
       <find>Bench</find>
       <find>.Add</find>
+      <find>L</find>
+      <find>Length</find>
+      <find>p4</find>
+      <find>Xor</find>
+      <find>.Xor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/55/724df0d2/MethodWrapper.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/3b/f25ea5b4/Tuple.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/e0/1e017188/TestMethodCommand.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/fd/b1c1d263/Byte.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/e7/91a3edbc/TestActionCommand.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/f9/8221b9be/RNGCryptoServiceProvider.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/ac/fd5ca675/Object.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/1b/198c5e84/SetUpTearDownCommand.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/NormalGraduateWork/packages.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/f8/c9e57a7d/SimpleWorkItem.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/2b/a3800ed5/WorkItem.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/f1/aaf88e9b/ParallelWorkItemDispatcher.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/22/7d1e15b5/BitConverter.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/bb/709775dd/CompositeWorkItem.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/08/8273e31f/Tuple`2.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/34/fac284a3/TestWorker.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AF4A91D-DF58-4557-A743-1596EC583F9D/a8/735f620c/ThreadHelper.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AF4A91D-DF58-4557-A743-1596EC583F9D/84/9ebb0af6/ExecutionContext.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/ByteArrayExtensionsTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/NumberExtensionsTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Extensions/ByteArrayExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Extensions/NumberExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/3b/f25ea5b4/Tuple.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDesSubKeysGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B807EB5E-3A8A-4FD7-87E7-DED0B7A26F46/84/c95dcaa9/Enumerable.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/fd/b1c1d263/Byte.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Extensions/BitArrayExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/72/342bf482/Array.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/85/68aaf00a/BitArray.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Random/UsualRandom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Random/WrapperRandomNumberGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Extensions/StringExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/f9/8221b9be/RNGCryptoServiceProvider.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/ac/fd5ca675/Object.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Aes16/Aes16Encryptor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AF4A91D-DF58-4557-A743-1596EC583F9D/3a/d6d0cf2a/Tuple`2.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Aes16/Aes16Helper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Aes16/Aes16Wrapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/NormalGraduateWork/packages.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Analysis/AES-16/Aes16Analyzer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Aes16/GaloisField16.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Aes16/Aes16MatrixMultiplier.cs" root0="FORCE_HIGHLIGHTING" />
@@ -133,15 +106,18 @@
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Aes16/Aes16SubKeysGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/FEAL-4/Feal4Helper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/FEAL-4/Feal4Encryptor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDesHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/FEAL-4/Feal4SubKeysGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Analysis/SimpleCipher/SimpleCipherAnalyzer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Extensions/ByteExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Analysis/SimpleCipher/PlainCipherPair.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Analysis/SimpleCipher/DifferentialCharacteristics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/OneRoundSimpleCipher/OneRoundSimpleCipher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/IntellectualSystem/Intellect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/TemplateGenerating/StringGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/BitArrayExtensionsTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/TemplateGenerating/Template.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/22/7d1e15b5/BitConverter.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/TemplateGenerating/TemplateListGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Analysis/FEAL-4/Feal4Analyzer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork/TemplateGenerating/TemplateBuilder.cs" root0="FORCE_HIGHLIGHTING" />
@@ -151,7 +127,7 @@
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/Aes16WrapperTests..cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/Feal4HelperTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/TemplateGeneratorTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/08/8273e31f/Tuple`2.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/b6/2b6605a7/Reflect.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/3a/33de09da/Random.cs" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
@@ -192,9 +168,20 @@
         <option value="$PROJECT_DIR$/NormalGraduateWork/Extensions/NumberExtensions.cs" />
         <option value="$PROJECT_DIR$/NormalGraduateWork/Cryptography/Analysis/SimpleCipher/DifferentialCharacteristics.cs" />
         <option value="$PROJECT_DIR$/NormalGraduateWork/Cryptography/Aes16/Aes16Helper.cs" />
-        <option value="$PROJECT_DIR$/NormalGraduateWork/Program.cs" />
         <option value="$PROJECT_DIR$/NormalGraduateWork/Cryptography/Aes16/Aes16Encryptor.cs" />
         <option value="$PROJECT_DIR$/NormalGraduateWork/Cryptography/Analysis/AES-16/Aes16Analyzer.cs" />
+        <option value="$PROJECT_DIR$/NormalGraduateWork/Cryptography/AesTwoRoun.cs" />
+        <option value="$PROJECT_DIR$/NormalGraduateWork/Cryptography/AesTwoRound.cs" />
+        <option value="$PROJECT_DIR$/NormalGraduateWork/Cryptography/S-DES.cs" />
+        <option value="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SimplifiedDes.cs" />
+        <option value="$PROJECT_DIR$/NormalGraduateWork.Tests/BitArrayExtensionsTests.cs" />
+        <option value="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDesHelper.cs" />
+        <option value="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDesSubKeysGenerator.cs" />
+        <option value="$PROJECT_DIR$/NormalGraduateWork/Extensions/BitArrayExtensions.cs" />
+        <option value="$PROJECT_DIR$/NormalGraduateWork/Extensions/ByteExtensions.cs" />
+        <option value="$PROJECT_DIR$/NormalGraduateWork/Program.cs" />
+        <option value="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs" />
+        <option value="$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs" />
       </list>
     </option>
   </component>
@@ -226,7 +213,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -250,22 +236,7 @@
               <item name="NormalGraduateWork (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="NormalGraduateWork" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Cryptography" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Aes16" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="NormalGraduateWork (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="NormalGraduateWork" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Cryptography" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Analysis" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="NormalGraduateWork (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="NormalGraduateWork" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Cryptography" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Analysis" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="AES-16" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="SDES" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
@@ -284,6 +255,7 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.Default">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/NormalGraduateWork/bin/Debug/NormalGraduateWork.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -318,6 +290,9 @@
       <option name="PROJECT_KIND" value="Console" />
       <option name="PROJECT_TFM" value=".NETFramework,Version=v4.6.2" />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -337,11 +312,13 @@
       <workItem from="1517388893069" duration="25199000" />
       <workItem from="1517480763351" duration="5551000" />
       <workItem from="1517486496198" duration="8828000" />
+      <workItem from="1517814140712" duration="8688000" />
+      <workItem from="1517828023247" duration="6835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65825000" />
+    <option name="totallyTimeSpent" value="83722000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -354,45 +331,29 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-1" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31601274" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16822916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997879" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31601274" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16822916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16822916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997879" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,182 +389,116 @@
           <properties documentPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/FEAL-4/Feal4Analyzer.cs" />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs</url>
+          <line>40</line>
+          <properties documentPath="$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs">
+            <startOffsets>
+              <startOffset value="1093" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="1143" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs</url>
+          <line>39</line>
+          <properties documentPath="$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs">
+            <startOffsets>
+              <startOffset value="1029" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="1076" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs</url>
+          <line>509</line>
+          <properties documentPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
+            <startOffsets>
+              <startOffset value="15320" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="15393" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs</url>
+          <line>93</line>
+          <properties documentPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
+            <startOffsets>
+              <startOffset value="2644" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="2711" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs</url>
+          <line>92</line>
+          <properties documentPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
+            <startOffsets>
+              <startOffset value="2590" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="2631" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs</url>
+          <line>351</line>
+          <properties documentPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
+            <startOffsets>
+              <startOffset value="10401" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="10412" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs</url>
+          <line>508</line>
+          <properties documentPath="$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
+            <startOffsets>
+              <startOffset value="-1" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="-1" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs</url>
+          <line>43</line>
+          <properties documentPath="$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs">
+            <startOffsets>
+              <startOffset value="1215" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="1216" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="137" />
+      <option name="time" value="156" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Aes16/Aes16Encryptor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/IntellectualSystem/Intellect.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Aes16/Aes16Encryptor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="41" column="69" lean-forward="false" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Analysis/FEAL-4/Feal4Analyzer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1533">
-          <caret line="80" column="42" lean-forward="false" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
-          <folding>
-            <marker date="1517389032016" expanded="true" signature="6:167" ph="..." />
-            <marker date="1517389032016" expanded="true" signature="169:425" ph="/* ReSharper disable SuggestVarOrType_BuiltInTypes ... */" />
-            <marker date="1517389032016" expanded="true" signature="490:625" ph="..." />
-            <marker date="1517389032016" expanded="true" signature="661:13347" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="1307:2003" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="1684:1887" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="2038:7257" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="2420:2571" ph="/* for (var i = 0; i &lt; fourthRoundUndoneFinalOperation.Count; ++i) ... */" />
-            <marker date="1517389032016" expanded="true" signature="4573:6256" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="4766:5988" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="5478:5660" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="5820:5970" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="6039:6242" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="7096:7246" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="7366:7777" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="7473:7724" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="7913:9458" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="8002:9422" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="9582:10942" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="9692:10905" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="11036:12074" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="11133:12037" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="12160:13341" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="12269:12725" ph="{...}" />
-            <marker date="1517389032016" expanded="true" signature="12778:13304" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/FEAL-4/Feal4Helper.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Analysis/SimpleCipher.cs" />
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/FEAL-4/Feal4SubKeysGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/OneRoundSimpleCipher/OneRoundSimpleCipher.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Extensions/StringExtensions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/TemplateGenerating/ArgumentsPositionsGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/TemplateGenerating/StringGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/TemplateGenerating/Template.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="40" lean-forward="false" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/TemplateGenerating/TemplateBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/TemplateGenerating/TemplateListGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/TemplateGeneratorTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="58" column="14" lean-forward="false" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/ArgumentsPositionsGeneratorTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/Feal4HelperTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="66" column="91" lean-forward="false" selection-start-line="66" selection-start-column="91" selection-end-line="66" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/FEAL-4/Feal4Encryptor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/aa/bb89e82c/RandomNumberGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/3a/33de09da/Random.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="152" column="24" lean-forward="false" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Random/UsualRandom.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Random/WrapperRandomNumberGenerator.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -722,20 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/MSBuild/15.0/Bin/Microsoft.Common.CurrentVersion.targets">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="1987" column="4" lean-forward="false" selection-start-line="1987" selection-start-column="4" selection-end-line="1987" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/packages.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/ac/fd5ca675/Object.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
@@ -747,12 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding>
-            <marker date="1517483888442" expanded="false" signature="6:97" ph="..." />
-            <marker date="1517483888442" expanded="true" signature="192:644" ph="{...}" />
-            <marker date="1517483888442" expanded="true" signature="240:638" ph="{...}" />
-            <marker date="1517483888442" expanded="true" signature="295:628" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,32 +638,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Aes16/Aes16SubKeysGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <marker date="1517567450378" expanded="false" signature="6:34" ph="..." />
-            <marker date="1517567450378" expanded="true" signature="1047:1317" ph="{...}" />
-            <marker date="1517567450378" expanded="true" signature="1047:1426" ph="{...}" />
-            <marker date="1517567450378" expanded="true" signature="1047:1428" ph="{...}" />
-            <marker date="1517567450378" expanded="true" signature="1376:1420" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/Aes16WrapperTests..cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="17" column="13" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <marker date="1517390264752" expanded="false" signature="6:110" ph="..." />
-            <marker date="1517390264752" expanded="true" signature="201:853" ph="{...}" />
-            <marker date="1517390264752" expanded="true" signature="249:838" ph="{...}" />
-            <marker date="1517390264752" expanded="true" signature="305:375" ph="{...}" />
-            <marker date="1517390264752" expanded="true" signature="428:498" ph="{...}" />
-            <marker date="1517390264752" expanded="true" signature="560:630" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -796,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="50" column="11" lean-forward="false" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
           <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,10 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding>
-            <marker date="1517487910971" expanded="true" signature="109:476" ph="{...}" />
-            <marker date="1517487910971" expanded="true" signature="346:470" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,7 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-321">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,18 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding>
-            <marker date="1517483971398" expanded="true" signature="82:321" ph="{...}" />
-            <marker date="1517483971398" expanded="true" signature="143:315" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -866,16 +698,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Aes16/Aes16SubKeysGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/AesTwoRound.cs" />
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/BitArrayExtensionsTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding>
+            <marker date="1517828315783" expanded="false" signature="6:131" ph="..." />
+            <marker date="1517828315783" expanded="true" signature="167:1096" ph="{...}" />
+            <marker date="1517828315783" expanded="true" signature="228:1094" ph="{...}" />
+            <marker date="1517828315783" expanded="true" signature="276:742" ph="{...}" />
+            <marker date="1517828315783" expanded="true" signature="342:583" ph="{...}" />
+            <marker date="1517828315783" expanded="true" signature="790:1079" ph="{...}" />
+            <marker date="1517828315783" expanded="true" signature="856:926" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/MSBuild/15.0/Bin/Microsoft.Common.CurrentVersion.targets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="1987" column="4" lean-forward="false" selection-start-line="1987" selection-start-column="4" selection-end-line="1987" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/Analysis/AES-16/Aes16Analyzer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="93" column="55" lean-forward="true" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
+        <state relative-caret-position="202">
+          <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
           <folding>
-            <marker date="1517571714561" expanded="true" signature="6:241" ph="..." />
+            <marker date="1517571714561" expanded="false" signature="6:241" ph="..." />
             <marker date="1517571714561" expanded="true" signature="293:11837" ph="{...}" />
             <marker date="1517571714561" expanded="true" signature="326:11835" ph="{...}" />
             <marker date="1517571714561" expanded="true" signature="1340:2008" ph="{...}" />
@@ -907,6 +770,287 @@
             <marker date="1517571714561" expanded="true" signature="10605:11677" ph="{...}" />
             <marker date="1517571714561" expanded="true" signature="10770:11663" ph="{...}" />
             <marker date="1517571714561" expanded="true" signature="11446:11645" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/b6/2b6605a7/Reflect.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="137" column="8" lean-forward="false" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/55/724df0d2/MethodWrapper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="166" column="6" lean-forward="false" selection-start-line="166" selection-start-column="6" selection-end-line="166" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/e0/1e017188/TestMethodCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="46" column="6" lean-forward="false" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/e7/91a3edbc/TestActionCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="68" column="6" lean-forward="false" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/1b/198c5e84/SetUpTearDownCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="61" column="6" lean-forward="false" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/f8/c9e57a7d/SimpleWorkItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/2b/a3800ed5/WorkItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="153" column="8" lean-forward="false" selection-start-line="153" selection-start-column="8" selection-end-line="153" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/34/fac284a3/TestWorker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="95" column="8" lean-forward="false" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AF4A91D-DF58-4557-A743-1596EC583F9D/a8/735f620c/ThreadHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AF4A91D-DF58-4557-A743-1596EC583F9D/84/9ebb0af6/ExecutionContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="267" column="6" lean-forward="false" selection-start-line="267" selection-start-column="6" selection-end-line="267" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/f1/aaf88e9b/ParallelWorkItemDispatcher.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="97" column="6" lean-forward="false" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/bb/709775dd/CompositeWorkItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="108" column="22" lean-forward="false" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/packages.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E649F13B-D7E1-41FA-A72D-2D4F996A4FCD/85/68aaf00a/BitArray.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="251" column="20" lean-forward="false" selection-start-line="251" selection-start-column="20" selection-end-line="251" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Extensions/ByteExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <marker date="1517834279228" expanded="true" signature="66:417" ph="{...}" />
+            <marker date="1517834279228" expanded="true" signature="107:415" ph="{...}" />
+            <marker date="1517834279228" expanded="true" signature="172:409" ph="{...}" />
+            <marker date="1517834279228" expanded="true" signature="264:371" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDesSubKeysGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <marker date="1517833176843" expanded="false" signature="6:76" ph="..." />
+            <marker date="1517833176843" expanded="true" signature="124:1248" ph="{...}" />
+            <marker date="1517833176843" expanded="true" signature="173:1246" ph="{...}" />
+            <marker date="1517833176843" expanded="true" signature="228:1240" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Extensions/BitArrayExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <marker date="1517833653979" expanded="false" signature="6:39" ph="..." />
+            <marker date="1517833653979" expanded="true" signature="80:1565" ph="{...}" />
+            <marker date="1517833653979" expanded="true" signature="125:1563" ph="{...}" />
+            <marker date="1517833653979" expanded="true" signature="210:410" ph="{...}" />
+            <marker date="1517833653979" expanded="true" signature="477:918" ph="{...}" />
+            <marker date="1517833653979" expanded="true" signature="708:881" ph="{...}" />
+            <marker date="1517833653979" expanded="true" signature="1002:1308" ph="{...}" />
+            <marker date="1517833653979" expanded="true" signature="1377:1557" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDesHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+          <folding>
+            <marker date="1517828756297" expanded="true" signature="73:2425" ph="{...}" />
+            <marker date="1517828756297" expanded="true" signature="119:2423" ph="{...}" />
+            <marker date="1517828756297" expanded="true" signature="187:391" ph="{...}" />
+            <marker date="1517828756297" expanded="true" signature="455:695" ph="{...}" />
+            <marker date="1517828756297" expanded="true" signature="770:973" ph="{...}" />
+            <marker date="1517828756297" expanded="true" signature="1062:1263" ph="{...}" />
+            <marker date="1517828756297" expanded="true" signature="1332:1695" ph="{...}" />
+            <marker date="1517828756297" expanded="true" signature="1390:1684" ph="{...}" />
+            <marker date="1517828756297" expanded="true" signature="1758:1961" ph="{...}" />
+            <marker date="1517828756297" expanded="true" signature="1816:1950" ph="{...}" />
+            <marker date="1517828756297" expanded="true" signature="2033:2417" ph="{...}" />
+            <marker date="1517828756297" expanded="true" signature="2092:2406" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding>
+            <marker date="1517834469615" expanded="true" signature="6:69" ph="..." />
+            <marker date="1517834469615" expanded="true" signature="99:839" ph="{...}" />
+            <marker date="1517834469615" expanded="true" signature="126:837" ph="{...}" />
+            <marker date="1517834469615" expanded="true" signature="172:835" ph="{...}" />
+            <marker date="1517834469615" expanded="true" signature="194:293" ph="/* var summary = BenchmarkRunner.Run&lt;Aes16Analyzer&gt;(); ... */" />
+            <marker date="1517834469615" expanded="true" signature="327:482" ph="/* var encryptor = new SDES(&quot;1000110010&quot;); ... */" />
+            <marker date="1517834469615" expanded="true" signature="567:757" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork.Tests/SimplifiedDesTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="72" column="47" lean-forward="false" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
+          <folding>
+            <marker date="1517834845639" expanded="false" signature="6:184" ph="..." />
+            <marker date="1517834845639" expanded="true" signature="220:2943" ph="{...}" />
+            <marker date="1517834845639" expanded="true" signature="276:2941" ph="{...}" />
+            <marker date="1517834845639" expanded="true" signature="324:827" ph="{...}" />
+            <marker date="1517834845639" expanded="true" signature="384:540" ph="{...}" />
+            <marker date="1517834845639" expanded="true" signature="879:1216" ph="{...}" />
+            <marker date="1517834845639" expanded="true" signature="901:1206" ph="/* for (var i = 0; i &lt; 256; ++i) ... */" />
+            <marker date="1517834845639" expanded="true" signature="1268:2267" ph="{...}" />
+            <marker date="1517834845639" expanded="true" signature="1330:1630" ph="{...}" />
+            <marker date="1517834845639" expanded="true" signature="1776:2257" ph="{...}" />
+            <marker date="1517834845639" expanded="true" signature="2314:2935" ph="{...}" />
+            <marker date="1517834845639" expanded="true" signature="2377:2476" ph="{...}" />
+            <marker date="1517834845639" expanded="true" signature="2531:2630" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NormalGraduateWork/Cryptography/SDES/SimplifiedDes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="572" column="16" lean-forward="false" selection-start-line="572" selection-start-column="16" selection-end-line="572" selection-end-column="16" />
+          <folding>
+            <marker date="1517834782692" expanded="false" signature="6:149" ph="..." />
+            <marker date="1517834782692" expanded="true" signature="197:18704" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="221:11687" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="388:2052" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="491:569" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="2093:2929" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="2970:3228" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="3268:3535" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="3424:3498" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="3575:3794" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="3668:3741" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="3830:4378" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="4462:4759" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="4541:4725" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="4846:5088" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="4934:5054" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="5131:5247" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="5286:5520" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="5596:6189" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="5619:5674" ph="/* 0 1 2 3 4 5 6 7 8 9 ... */" />
+            <marker date="1517834782692" expanded="true" signature="6280:6844" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="6303:6381" ph="/* 0 1 2 3 4 5 6 7 ... */" />
+            <marker date="1517834782692" expanded="true" signature="6897:7255" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="6920:6973" ph="/* 0 1 2 3 ... */" />
+            <marker date="1517834782692" expanded="true" signature="7292:7832" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="7315:7384" ph="/* 0 1 2 3 ... */" />
+            <marker date="1517834782692" expanded="true" signature="7910:8460" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="7933:7980" ph="/* 0 1 2 3 4 5 6 7 ... */" />
+            <marker date="1517834782692" expanded="true" signature="8505:9081" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="8528:8576" ph="/* 0 1 2 3 4 5 6 7 ... */" />
+            <marker date="1517834782692" expanded="true" signature="9146:9414" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="9297:9376" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="9462:9967" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="9717:9787" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="9853:9929" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="10017:10422" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="10471:10778" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="10826:11278" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="11056:11127" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="11167:11241" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="11319:11586" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="11460:11547" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="11632:11681" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="11723:18702" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="12030:13486" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="13542:13695" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="13750:13902" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="13977:14708" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="14782:15539" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="15606:15814" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="15889:16129" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="16204:17250" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="16399:16693" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="17326:17743" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="17805:18219" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="17878:18172" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="18282:18696" ph="{...}" />
+            <marker date="1517834782692" expanded="true" signature="18355:18649" ph="{...}" />
           </folding>
         </state>
       </provider>

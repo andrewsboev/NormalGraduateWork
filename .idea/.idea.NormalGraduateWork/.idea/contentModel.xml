@@ -36,9 +36,16 @@
           <e p="OneRoundSimpleCipher" t="Include">
             <e p="OneRoundSimpleCipher.cs" t="Include" />
           </e>
+          <e p="SDES" t="Include">
+            <e p="SimplifiedDes.cs" t="Include" />
+            <e p="SimplifiedDesHelper.cs" t="Include" />
+            <e p="SimplifiedDesSubKeysGenerator.cs" t="Include" />
+          </e>
         </e>
         <e p="Extensions" t="Include">
+          <e p="BitArrayExtensions.cs" t="Include" />
           <e p="ByteArrayExtensions.cs" t="Include" />
+          <e p="ByteExtensions.cs" t="Include" />
           <e p="NumberExtensions.cs" t="Include" />
           <e p="StringExtensions.cs" t="Include" />
         </e>
@@ -69,6 +76,7 @@
         <e p="Aes16WrapperTests..cs" t="Include" />
         <e p="ArgumentsPositionsGeneratorTests.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="BitArrayExtensionsTests.cs" t="Include" />
         <e p="ByteArrayExtensionsTests.cs" t="Include" />
         <e p="Feal4HelperTests.cs" t="Include" />
         <e p="NormalGraduateWork.Tests.csproj" t="IncludeRecursive" />
@@ -78,6 +86,7 @@
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="SimplifiedDesTests.cs" t="Include" />
         <e p="TemplateGeneratorTests.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />

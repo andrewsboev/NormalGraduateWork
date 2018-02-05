@@ -51,9 +51,11 @@
   <ItemGroup>
     <Compile Include="Aes16WrapperTests..cs" />
     <Compile Include="ArgumentsPositionsGeneratorTests.cs" />
+    <Compile Include="BitArrayExtensionsTests.cs" />
     <Compile Include="ByteArrayExtensionsTests.cs" />
     <Compile Include="Feal4HelperTests.cs" />
     <Compile Include="NumberExtensionsTests.cs" />
+    <Compile Include="SimplifiedDesTests.cs" />
     <Compile Include="TemplateGeneratorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

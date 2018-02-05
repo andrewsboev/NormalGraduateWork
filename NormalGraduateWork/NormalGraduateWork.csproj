@@ -154,7 +154,12 @@
     <Compile Include="Cryptography\FEAL-4\Feal4Helper.cs" />
     <Compile Include="Cryptography\FEAL-4\Feal4SubKeysGenerator.cs" />
     <Compile Include="Cryptography\OneRoundSimpleCipher\OneRoundSimpleCipher.cs" />
+    <Compile Include="Cryptography\SDES\SimplifiedDes.cs" />
+    <Compile Include="Cryptography\SDES\SimplifiedDesHelper.cs" />
+    <Compile Include="Cryptography\SDES\SimplifiedDesSubKeysGenerator.cs" />
+    <Compile Include="Extensions\BitArrayExtensions.cs" />
     <Compile Include="Extensions\ByteArrayExtensions.cs" />
+    <Compile Include="Extensions\ByteExtensions.cs" />
     <Compile Include="Extensions\NumberExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="IntellectualSystem\Intellect.cs" />
