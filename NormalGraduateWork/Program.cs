@@ -5,7 +5,10 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using BenchmarkDotNet.Attributes.Jobs;
+using BenchmarkDotNet.Configs;
 using NormalGraduateWork.Cryptography.Aes16;
+using NormalGraduateWork.Cryptography.Analysis;
+using NormalGraduateWork.Extensions;
 using NormalGraduateWork.Random;
 using NormalGraduateWork.TemplateGenerating;
 
@@ -63,7 +66,7 @@ namespace NormalGraduateWork
 
             var content = File.ReadAllLines(PlainCipherFileName);
             var templatesStats = new List<TemplateStatistics>();
-
+            var key = new byte[] {0x56, 0xDE};
             TemplateStatistics currentTemplateStats = null;
             foreach (var line in content)
             {
@@ -78,16 +81,28 @@ namespace NormalGraduateWork
                     var parts = line.Split(' ');
                     var plain = parts[1];
                     var encrypted = parts[3];
-                    var blockPairs = new List<Tuple<byte[], byte[]>>();
+                    var blockPairs = new List<Tuple<ushort, ushort>>();
                     for (var i = 0; i < plain.Length; ++i)
                     {
                         var plainBytes = Encoding.Unicode.GetBytes(plain[i].ToString());
                         var encryptedBytes = Encoding.Unicode.GetBytes(encrypted[i].ToString());
-                        blockPairs.Add(Tuple.Create(plainBytes, encryptedBytes));
+                        blockPairs.Add(Tuple.Create(plainBytes.ToUInt16(), encryptedBytes.ToUInt16()));
                     }
-                    
-                    //
+
                     var success = false;
+                    for (var i = 0; i < blockPairs.Count; ++i)
+                    for (var j = i + 1; j < blockPairs.Count; ++j)
+                    {
+                        var diff = blockPairs[i].Item1 ^ blockPairs[j].Item1;
+                        var goodPair = blockPairs[i];
+                        var analyzer = new Aes16Analyzer(key, blockPairs.ToArray(), goodPair);
+                        var result = analyzer.Analyze((ushort)diff);
+                        if (result)
+                        {
+                            success = true;
+                            break;
+                        }
+                    }
                     currentTemplateStats.AddAttempt(success);
                 }
                 
