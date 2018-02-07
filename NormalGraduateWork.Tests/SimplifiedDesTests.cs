@@ -30,20 +30,6 @@ namespace NormalGraduateWork.Tests
         }
         
         [Test]
-        public void Test1()
-        {
-           /* 
-            
-            for (var i = 0; i < 256; ++i)
-            {
-                var asByte = (byte) i;
-                var encrypted = encryptor.Encrypt(asByte, key);
-                var decrypted = encryptor.Decrypt(encrypted, key);
-                decrypted.Should().Be(asByte);
-            }*/
-        }
-        
-        [Test]
         public void Test2()
         {
             var key = new BitArray(10)

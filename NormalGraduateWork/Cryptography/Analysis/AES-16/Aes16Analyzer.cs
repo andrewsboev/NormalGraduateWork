@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Diagnostics;
 using System.IO;
 using System.Security.Cryptography;
@@ -29,9 +30,12 @@ namespace NormalGraduateWork.Cryptography.Analysis
         private readonly int numPairs = 128;
         private readonly Dictionary<ushort, ushort> firstSboxDict;
         private readonly Dictionary<ushort, ushort> secondSboxDict;
+
+        private readonly Tuple<ushort, ushort>[] pcp;
         
-        public Aes16Analyzer()
+        public Aes16Analyzer(Tuple<ushort, ushort>[] pcp)
         {
+            this.pcp = pcp;
             key = new byte[2];
             new RNGCryptoServiceProvider().GetBytes(key);
             subKeys = aes16SubKeysGenerator.GetAllSubKeys(key);
@@ -117,7 +121,8 @@ namespace NormalGraduateWork.Cryptography.Analysis
         // ok
         private Tuple<ushort, ushort>[] BuildPlainCipherPairs()
         {
-            var result = new Tuple<ushort, ushort>[numPairs];
+            return pcp;
+            /*var result = new Tuple<ushort, ushort>[numPairs];
             for (var i = 0; i < numPairs; ++i)
             {
                 var plainText = new byte[2];
@@ -127,9 +132,11 @@ namespace NormalGraduateWork.Cryptography.Analysis
                 var cipherTextAsUshort = cipherText.ToUInt16();
                 result[i] = Tuple.Create(plainTextAsUshort, cipherTextAsUshort);
             }
-            return result;
+            return result;*/
         }
 
+        
+        // getlists - пары внутренних (после ключа) входов в S-BOX
         private Tuple<Tuple<ushort, ushort>[], Tuple<ushort, ushort>[]> GetLists(ushort diff1, ushort diff2, ushort diff3)
         {
             var index1 = 0;
@@ -250,6 +257,8 @@ namespace NormalGraduateWork.Cryptography.Analysis
             }
             return result;
         }
+        
+        private 
 
         private List<Tuple<int, int, int>> BuildDifferentialTable()
         {

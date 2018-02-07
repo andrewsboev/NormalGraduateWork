@@ -20,6 +20,12 @@ namespace NormalGraduateWork.Random
             return BitConverter.ToUInt32(randomBytes, 0);
         }
 
+        public Int32 GetNextInt32()
+        {
+            var randomBytes = GetNextBytes(4);
+            return BitConverter.ToInt32(randomBytes, 0);
+        }
+
         public UInt64 GetNextUInt64()
         {
             var randomBytes = GetNextBytes(8);

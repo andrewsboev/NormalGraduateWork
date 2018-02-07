@@ -5,8 +5,8 @@ namespace NormalGraduateWork.TemplateGenerating
 {
     public class TemplateListGenerator
     {
-        private const int MaxTemplateLength = 100;
-        private const int MaxArgumentsCount = 100;
+        private const int MaxTemplateLength = 10;
+        private const int MaxArgumentsCount = 10;
         private readonly TemplateBuilder templateBuilder;
         private readonly ArgumentsPositionsGenerator argumentsPositionsGenerator;
         
@@ -17,10 +17,12 @@ namespace NormalGraduateWork.TemplateGenerating
             this.argumentsPositionsGenerator = argumentsPositionsGenerator;
         }
 
-        public List<Template> Generate()
+        public List<Template> Generate(int length, int arguments)
         {
+            return GenerateTemplates(length, arguments);
+            
             var allTemplates = new List<Template>();
-            for (var i = 1; i < MaxTemplateLength; ++i)
+            for (var i = 10; i < MaxTemplateLength; ++i)
             {
                 var templatesWithLength = GenerateTemplates(i);
                 allTemplates.AddRange(templatesWithLength);
@@ -42,15 +44,18 @@ namespace NormalGraduateWork.TemplateGenerating
         private List<Template> GenerateTemplates(int templateLength, int argumentsCount)
         {
             var allTemplates = new List<Template>();
-            var allArgumentsPositions = argumentsPositionsGenerator.Generate(argumentsCount,
-                templateLength);
+            var allArgumentsPositions = new List<List<int>>()
+            {
+                new List<int>() {0}
+            };
             foreach (var argumentsPositions in allArgumentsPositions)
             {
-                var template = templateBuilder.Generate(templateLength,
-                    argumentsPositions.ToArray());
-                allTemplates.Add(template);
+                for (var i = 0; i < 1; ++i)
+                {
+                    var template = templateBuilder.Generate(templateLength, argumentsPositions.ToArray());
+                    allTemplates.Add(template);
+                }
             }
-
             return allTemplates;
         }
     }
